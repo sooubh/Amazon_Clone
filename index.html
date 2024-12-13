@@ -9,15 +9,17 @@
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
     <header>
         <div class="navbar">
+            <!-- Logo Section -->
             <div class="nav-logo border">
                 <div class="logo"></div>
             </div>
+
+            <!-- Address Section -->
             <div class="nav-address border">
                 <p class="add-first">Deliver To</p>
                 <div class="add-icon">
@@ -26,43 +28,47 @@
                 </div>
             </div>
 
+            <!-- Search Section -->
             <div class="nav-search">
                 <select class="search-select">
                     <option>All</option>
                 </select>
                 <input placeholder="Search Amazon" class="search-input border">
                 <div class="search-icon">
-
                     <i class="fa-solid fa-magnifying-glass"></i>
-
-                    <div class="nav-search">
-                        <select class="search-select">
-                            <option>All</option>
-                        </select>
-                        <input placeholder="Search Amazon" class="search-input">
-                        <div class="search-icon">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="nav-country">
-                    <div class="flag-icon border">
-                        <i class="fa-solid fa-flag-checkered"></i>
-                        <p class="EN">EN<i class="fa-solid fa-caret-down"></i></p>
-
-                    </div>
-                </div>
-                <div class="nav-signin border">
-                    <p><span>Hello, Sign In</span></p>
-                    <p class="nav-Second">Account & Lists</p>
-                </div>
-
-                <div class="nav-return border">
-                    <p><span>Return</span></p>
-                    <p class="nav-Second">& Orders <i class="fa-solid fa-caret-down"></i></p>
                 </div>
             </div>
+
+            <!-- Country Section -->
+            <div class="nav-country border">
+                <div class="flag-icon">
+                    <i class="fa-solid fa-flag-checkered"></i>
+                    <p class="EN">EN <i class="fa-solid fa-caret-down"></i></p>
+                </div>
+            </div>
+
+            <!-- Sign-In Section -->
+            <div class="nav-signin border">
+                <p><span>Hello, Sign In</span></p>
+                <p class="nav-second">Account & Lists</p>
+            </div>
+
+            <!-- Returns & Orders Section -->
+            <div class="nav-return border">
+                <p><span>Return</span></p>
+                <p class="nav-second">& Orders <i class="fa-solid fa-caret-down"></i></p>
+            </div>
+            <div class="nav-cart border">
+                <div class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="cart-dropdown">
+                    <p>Your Cart is Empty</p>
+                </div>
+            </div>
+        </div>
     </header>
 </body>
+
 </html>

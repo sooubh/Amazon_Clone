@@ -1,8 +1,9 @@
+/* General Styling */
 * {
     margin: 0;
-    font-family: Arial;
-    border: border-box;
-
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
 .navbar {
@@ -20,7 +21,7 @@
 }
 
 .logo {
-    background-image: url(amazon_logo.png);
+    background-image: url('amazon_logo.png');
     background-size: cover;
     height: 50px;
     width: 100%;
@@ -34,7 +35,7 @@
     border: 1.5px solid white;
 }
 
-/** box 2 ***/
+/* Address Section */
 .add-first {
     color: #cccccc;
     font-size: 1rem;
@@ -51,8 +52,7 @@
     align-items: center;
 }
 
-/**Box 3**/
-
+/* Search Section */
 .nav-search {
     display: flex;
     justify-content: space-evenly;
@@ -63,7 +63,7 @@
 }
 
 .search-select {
-    background-color: #F3F3F3;
+    background-color: #f3f3f3;
     width: 50px;
     text-align: center;
     border-top-left-radius: 4px;
@@ -87,23 +87,75 @@
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     color: #0f1111;
-
 }
 
-/** box 4 **/
-span{
+/* Country Section */
+.flag-icon {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.EN {
+    margin-left: 4px;
+}
+
+/* Sign-In and Returns Section */
+span {
     font-size: 0.7rem;
 }
-.nav-second{
+
+.nav-second {
     font-size: 0.85rem;
     font-weight: 700;
 }
-.flag-icon{
-    font-size: 1rem;
-    font-weight: 700;
+/* Cart Section */
+.nav-cart {
+    position: relative;
     display: flex;
-    margin: 2px;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
 }
-.EN{
-    margin-left: 4px;
+
+.cart-icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.cart-icon i {
+    font-size: 1.5rem;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+.cart-dropdown {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    background-color: #fff;
+    color: black;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 10;
+    border-radius: 4px;
+}
+
+.nav-cart:hover .cart-dropdown {
+    display: block;
 }
